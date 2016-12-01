@@ -1,6 +1,7 @@
 var React = require('react');
 var ReactRouter = require('react-router');
 var Link = ReactRouter.Link;
+var MainWrapper = require('./MainWrapper');
 
 function Home () {
   return (
