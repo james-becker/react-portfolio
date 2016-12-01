@@ -6,7 +6,7 @@ function Home () {
   return (
     <MainWrapper>
       <h1>GitHub Battle</h1>
-      <p className='lead'>Suck My Cock, Asshole.</p>
+      <p className='lead'>What is a jquery?</p>
       <Link to='/playerOne'>
         <button type='button' className='btn btn-lg btn-success'>Get Started</button>
       </Link>
