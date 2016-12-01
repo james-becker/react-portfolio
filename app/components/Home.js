@@ -6,8 +6,8 @@ var MainWrapper = require('./MainWrapper');
 function Home () {
   return (
     <MainWrapper>
-      <h1>Github Fight</h1>
-      <p className='lead'>What the fuck.</p>
+      <h1>GitHub Brawl</h1>
+      <p className='lead'>What. The. Fuck.</p>
       <Link to='/playerOne'>
         <button type='button' className='btn btn-lg btn-success'>Get Started</button>
       </Link>
