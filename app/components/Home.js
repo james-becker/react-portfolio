@@ -10,6 +10,7 @@ function Home () {
       <p className='lead'>What is a jquery?</p>
       <h1>GitHub Brawl</h1>
       <p className='lead'>What. The.</p>
+      <p className='lead'>What is a Jquery?</p>
       <Link to='/playerOne'>
         <button type='button' className='btn btn-lg btn-success'>Get Started</button>
       </Link>
