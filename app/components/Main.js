@@ -1,4 +1,5 @@
 var React = require('react');
+var NavBar = require('./NavBar')
 
 var Main = React.createClass({
   render: function () {

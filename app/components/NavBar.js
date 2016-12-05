@@ -12,7 +12,7 @@ var NavBar = React.createClass({
         <li><a href="#about">About</a></li>
       </ul>
     )
-  }
+  },
 });
 
 module.exports = NavBar;
