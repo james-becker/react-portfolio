@@ -6,6 +6,9 @@ var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
+  resolve: {
+    extensions: ["", ".js", ".jsx", ".json"]
+  },
   entry: [
     './app'
   ],
@@ -16,6 +19,10 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /\.json$/,
+        loader: "json"
+      },
+      {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: "babel-loader",
@@ -25,8 +32,8 @@ module.exports = {
       },
       {
         test: /\.css/,
-        loaders: ['style','css'],
-        include: __dirname + '/app'
+        loaders: ["style","css"],
+        include: __dirname + "/app"
       }
     ]
   },

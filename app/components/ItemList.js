@@ -11,8 +11,7 @@ var ItemList = React.createClass({
   render: function() {
     var items = this.props.items.map(function (item) {
       return (
-        <ItemPreview item={item} />
-
+        <ItemPreview item="{item}" />
       );
     });
 
@@ -22,6 +21,6 @@ var ItemList = React.createClass({
       </ul>
     )
   },
-})
+});
 
 module.exports = ItemList;

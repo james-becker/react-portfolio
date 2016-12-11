@@ -1,5 +1,5 @@
-var React = require('react');
-var ReactRouter = require('react-router');
+var React = require("react");
+var ReactRouter = require("react-router");
 var Link = ReactRouter.Link;
 var items = require("../data/items.json");
 
@@ -14,7 +14,6 @@ var ItemPreview = React.createClass({
       </li>
     )
   }
-
 })
 
 module.exports = ItemPreview;
