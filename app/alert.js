@@ -1,0 +1,1 @@
+alert('Now serving /dist/index_bundle.html at localhost:8080');

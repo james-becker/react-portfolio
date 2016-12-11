@@ -2,9 +2,26 @@ var React = require('react');
 var ReactRouter = require('react-router');
 var Link = ReactRouter.Link;
 var ItemPreview = require('ItemPreview');
-var items = require('../data/items')
+//var items = require('../data/items') uncomment only if not receiving props
 
-items.each(function(itemID) {
-  // Render an ItemPreview for each item in the ../data/items.js array.
-  <ItemPreview itemID={itemID} />
-}
+var ItemList = React.createClass({
+  getDefaultProps: function() {
+    return {items: []}
+  },
+  render: function() {
+    var items = this.props.items.map(function (item) {
+      return (
+        <ItemPreview item={item} />
+
+      );
+    });
+
+    return (
+      <ul>
+        {items}
+      </ul>
+    )
+  },
+})
+
+module.exports = ItemList;
